@@ -1,0 +1,19 @@
+.form-control {
+	width: 50%;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+.col-sm-4 {
+	text-align: center;
+	border: solid;
+	height: 3000px;
+}
+
+p {
+	margin: auto;
+	text-align: center;
+}
