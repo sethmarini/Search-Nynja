@@ -1,33 +1,27 @@
 html,body {
 	height:100%;
 	width:100%;
-	background-color:#000000;
+	background-color:#000;
 	color: #e0e0e0;
 	font-family: 'Open Sans', sans-serif;
+	
 }
 
 
 .jumbotron {
-
+	margin-bottom: 0;
+	font-family: 'Share Tech Mono', monospace;
+	/* BACKGROUND */
 	width:100%;
 	max-width:100%;
 	background-position:auto;
 	background-size:cover;
 	background: #000 url("../img/cyberpunk_jumbotron_bg.jpg") center no-repeat;
 	overflow: hidden;
-	color: #00cbe3;
-	margin-bottom: 0;
-	font-family: 'Share Tech Mono', monospace;
 }
 
-.form-control {
-	width: 50%;
-	margin: auto;
-}
-
-#search-btn {
+#allSearch {
 	background-color:#00cbe3;
-	text-align: center;
 
 }
 
