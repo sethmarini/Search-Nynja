@@ -2,10 +2,10 @@
 
 <html lang="en-us">
 
- <head>
+<head>
 
-   <meta charset="UTF-8">
-   <title>SEARCH NYNJA</title>
+  <meta charset="UTF-8">
+  <title>SEARCH NYNJA</title>
 
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,74 +13,68 @@
   <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
   <meta name="description" content="SEARCH NINJA A Search Engine Comparison App">
   <meta name="author" content="Team 3: David Cejas, Jennifer Cuenca, Seth Marini, Javi Perez, William Zunamon">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Share+Tech+Mono" rel="stylesheet">
-   </head>
+</head>
 
+<body>
+  <div class="jumbotron">
+    <div class='col-md-12 text-center'>
+      <h2>
+        <span class="glyphicon glyphicon-search"></span> SEARCH NYNJA</h2>
 
- <body>
-<div class="jumbotron">
-    <h2><span class="glyphicon glyphicon-search"></span> SEARCH NYNJA</h2>
-    
-    <div>
-    <form class="navbar-form" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" id="search-input" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default glyphicon glyphicon-search" id="allSearch"></button>
-    </form>
+      <div>
+        <form class="navbar-form" id="search" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" id="search-input" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default glyphicon glyphicon-search" id="allSearch"></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container full-container">
+
+    <div id="top-searches">
+      TOP SEARCHES
     </div>
 
-
-
-
-
-    
-    <!-- <form id="search">
-        <input class="form-control" id="search-input" type="text">
-        <button class="btn btn-default" id="allSearch" type="input"><i class="glyphicon glyphicon-search"></i></button>
-      </form> -->
-</div>
-
-
-<div id="top-searches">
-  <div class="container">
-    TOP SEARCHES 
-  </div>
-</div>
-
-
-<div class="container">
     <div class="row">
-        <div class="col-md-4">
-            <div class ="results-container">
-            <div class="engine-header">
-                <h4><i class="glyphicon glyphicon-globe"></i> GOOGLE</h4></div>
-            <div class = "search-results" id="google-results">
+      <div class="col-md-4">
+        <div class="results-container">
+          <div class="engine-header">
+            <h4>
+              <i class="glyphicon glyphicon-globe"></i> GOOGLE</h4>
           </div>
-        </div>
-        </div>
-        <div class="col-md-4">
-          <div class="results-container">
-              <div class="engine-header"><h4><i class="glyphicon glyphicon-globe"></i> BING</h4></div>
-              <div class = "search-results" id="bing-results">
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4">
-          <div class="results-container">
-              <div class="engine-header"><h4><i class="glyphicon glyphicon-globe"></i> WOLFRAM</h4></div>
-              <div class = "search-results" id="wolfram-results">
-            </div>
-          </div>
+          <div class="search-results" id="google-results"></div>
         </div>
       </div>
-</div>
 
+      <div class="col-md-4">
+        <div class="results-container">
+          <div class="engine-header">
+            <h4>
+              <i class="glyphicon glyphicon-globe"></i> BING</h4>
+          </div>
+          <div class="search-results" id="bing-results"></div>
+        </div>
+      </div>
 
+      <div class="col-md-4">
+        <div class="results-container">
+          <div class="engine-header">
+            <h4>
+              <i class="glyphicon glyphicon-globe"></i> WOLFRAM</h4>
+          </div>
+          <div class="search-results" id="wolfram-results"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -98,6 +92,6 @@
   <script src="assets/javascript/yahoo-api.js"></script>
 
 
- </body>
+</body>
 
 </html>

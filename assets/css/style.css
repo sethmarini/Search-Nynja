@@ -33,12 +33,11 @@ html,body {
 	font-family: 'Share Tech Mono', monospace;
 }
 
+.full-container {
+	width: 96%;
+}
 .results-container {
 	border: solid 1px #00cbe3;
-}
-
-.glyphicon {
-	/* border: solid 1px #000; */
 }
 
 .engine-header {
