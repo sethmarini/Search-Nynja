@@ -7,7 +7,6 @@ html,body {
 	
 }
 
-
 .jumbotron {
 	margin-bottom: 0;
 	font-family: 'Share Tech Mono', monospace;
@@ -20,9 +19,27 @@ html,body {
 	overflow: hidden;
 }
 
+#inputForm {
+	width: 600px;
+}
+
+.carousel-inner>.item {
+	min-height: 400px;
+	
+}
+
 #allSearch {
 	background-color:#00cbe3;
 
+}
+
+#allSearch:hover {
+	background-color:#2a6268;
+
+}
+
+#allSearch:active {
+	background-color:#82f2ff;
 }
 
 #top-searches {
@@ -52,17 +69,86 @@ html,body {
 }
 
 .search-results {
+	top: 20px;
 	margin-left: 10px;
 	margin-right: 10px;
-	margin-bottom: 10px
+	margin-bottom: 10px;
+	text-align: left;
+    line-height: 19px;
+    font-size: 14px;
 }
 
-h2 {
+/* h2 {
 	text-align: center;
-}
+} */
 
 p {
 	margin: auto;
 }
 
+.result h2 a {
+	text-align: left;
+}
 
+.result a {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	color: #00cbe3;
+}
+
+.result p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: whitesmoke;
+	text-align: left;
+}
+
+/* WIKI RESULTS STYLING */
+.result a h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	color: #00cbe3;
+}
+
+.result a p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: whitesmoke;
+	text-align: left;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+	.carousel-indicators, .carousel-control {
+		display: none;
+	}
+	.item {
+		width: calc(32% - 30px);
+		margin-right: 30px;
+	}
+
+	item:last-child {
+		margin-right: 0;
+	}
+	.carousel-inner {
+		overflow: initial;
+	}
+
+	.carousel-inner>.item {
+		min-height: 85px;
+		display: inline-block;
+	}
+
+	.carousel-caption {
+		right: auto;
+		left: auto;
+		width: 98%;
+	}
+
+	.search-results {
+	right: auto;
+    left: auto;
+    width: 98%;
+	}
+}
