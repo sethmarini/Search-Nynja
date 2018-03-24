@@ -12,9 +12,9 @@ $(document).ready(function(){
     });
 
     //carousel	
-    $('#carousel').carousel({
-        interval: false,
-    });
+    // $('#carousel').carousel({
+    //     interval: false,
+    // });
 
      //TO DO: for loop to find height of the tallest result and have it set the resultHeight var.
 

@@ -1,7 +1,7 @@
 html,body {
 	height:100%;
 	width:100%;
-	background-color:#000;
+	background:#000 url("../img/nami.png");
 	color: #e0e0e0;
 	font-family: 'Open Sans', sans-serif;
 	
@@ -15,7 +15,7 @@ html,body {
 	max-width:100%;
 	background-position:auto;
 	background-size:cover;
-	background: #000 url("../img/cyberpunk_jumbotron_bg.jpg") center no-repeat;
+	background: #000 url("../img/cyberpunk-japan-science-fiction-futuristic.jpg") center no-repeat;
 	overflow: hidden;
 }
 
@@ -42,7 +42,7 @@ html,body {
 	background-color:#82f2ff;
 }
 
-#top-searches {
+#recent-searches {
 	padding: 20px 30px;
 	background-color:#00cbe3;
 	color: #000;
@@ -55,6 +55,7 @@ html,body {
 }
 .results-container {
 	border: solid 1px #00cbe3;
+	background: #000;
 }
 
 .engine-header {
@@ -69,14 +70,18 @@ html,body {
 }
 
 .search-results {
+	height: auto;
+    width: auto;
 	top: 20px;
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-bottom: 10px;
 	text-align: left;
     line-height: 19px;
-    font-size: 14px;
+	font-size: 14px;
+	
 }
+
 
 /* h2 {
 	text-align: center;
