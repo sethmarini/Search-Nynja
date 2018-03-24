@@ -13,18 +13,21 @@
   <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
   <meta name="description" content="SEARCH NINJA A Search Engine Comparison App">
   <meta name="author" content="Team 3: David Cejas, Jennifer Cuenca, Seth Marini, Javi Perez, William Zunamon">
+ 
   
   <!-- STYLE SHEETS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css"/>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  
+
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Share+Tech+Mono" rel="stylesheet">
 </head>
 
 <body>
+
   <!-- SEARCH FORM JUMBOTRON -->
   <div class="jumbotron">
     <div class='col-md-12 text-center'>
@@ -43,84 +46,59 @@
     </div>
   </div>
 
+  <!-- CONTENT -->
   <div class="container full-container">
 
-    <!-- <div id="top-searches">
-      TOP SEARCHES
-    </div> -->
-
-    <!-- <div class="row">
-      <div class="col-md-4">
-        
-      </div>
-
-      <div class="col-md-4">
-        
-      </div>
-
-      <div class="col-md-4">
-        
-      </div>
+    <!-- TOP SEARCHES DIV -->
+    <div id="recent-searches">
+      RECENT SEARCHES
     </div>
-  </div> -->
 
-  <!-- CAROUSEL -->
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
-    
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <div class="engine-header">
-                <h4>
-                  <i class="glyphicon glyphicon-globe"></i> GOOGLE</h4>
+    <!-- ALL SEARCH RESULTS -->
+    <div class="all-search-results">
+      <div class="col-sm-4">
+          <div class="results-container">
+              <div class="engine-header">
+                <h4><i class="glyphicon glyphicon-globe"></i> GOOGLE</h4>
               </div>
-              <div class="search-results carousel-caption" id="google-results"></div>
-          </div>
-       
-        <div class="item">
-          <div class="engine-header">
-            <h4>
-              <i class="glyphicon glyphicon-globe"></i> BING</h4>
-          </div>
-          <div class="search-results carousel-caption" id="bing-results"></div>
-        </div>
-        <div class="item">
-          <div class="engine-header">
-            <h4>
-              <i class="glyphicon glyphicon-globe"></i> WIKIPEDIA</h4>
-          </div>
-          <div class="search-results carousel-caption" id="wiki-results"></div>
-        </div>
+              <div class="search-results" id="google-results"></div>
+              
+            </div>
       </div>
-    </div>
-    
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
 
+      <!-- BING -->
+      <div class="col-sm-4">
+            <div class="results-container">
+                <div class="engine-header">
+                  <h4>
+                    <i class="glyphicon glyphicon-globe"></i> BING</h4>
+                </div>
+                <div class="search-results" id="bing-results"></div>
+              </div>
+        </div>
 
+      <!-- WIKIPEDIA -->
+      <div class="col-sm-4">
+          <div class="results-container">
+            <div class="engine-header">
+              <h4><i class="glyphicon glyphicon-globe"></i> WIKIPEDIA</h4>
+            </div>
+            <div class="search-results" id="wiki-results"></div>
+          </div>
+        </div>
+        
+    </div><!-- END OF ALL RESULTS CONTAINER/CAROUSEL DIV -->
 
-
-
-
-
-
+  
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <!-- jQuery for SLICK CAROUSEL -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
+  <!-- SLICK CAROUSEL JS -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
+  
   <!-- bootstrap js -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -138,3 +116,6 @@
 </body>
 
 </html>
+
+
+

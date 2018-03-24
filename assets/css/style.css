@@ -15,12 +15,8 @@ html,body {
 	max-width:100%;
 	background-position:auto;
 	background-size:cover;
-	background: #000 url("../img/cyberpunk-japan-science-fiction-futuristic.jpg") center no-repeat;
+	background: #000 url("../img/cyberpunk-1521899691536-7926.jpg") center no-repeat;
 	overflow: hidden;
-}
-
-#inputForm {
-	width: 600px;
 }
 
 .carousel-inner>.item {
@@ -83,6 +79,13 @@ html,body {
 }
 
 
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    display:block;
+}
+
+
 /* h2 {
 	text-align: center;
 } */
@@ -122,6 +125,13 @@ p {
 	text-align: left;
 }
 
+.carousel-caption{
+position: relative;
+    margin: 0;
+    left: 0;
+	padding: 5%;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 768px) {
@@ -136,8 +146,17 @@ p {
 	item:last-child {
 		margin-right: 0;
 	}
+
+	#inputForm {
+		width: 600px;
+	}
+
 	.carousel-inner {
 		overflow: initial;
+		align-items: center;
+		position: initial;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 
 	.carousel-inner>.item {
@@ -146,6 +165,7 @@ p {
 	}
 
 	.carousel-caption {
+		position: absolute;
 		right: auto;
 		left: auto;
 		width: 98%;

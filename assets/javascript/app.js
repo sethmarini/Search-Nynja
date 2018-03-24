@@ -18,9 +18,9 @@ $(document).ready(function(){
 
      //TO DO: for loop to find height of the tallest result and have it set the resultHeight var.
 
-    var resultHeight = 500 + "px";
+    // var resultHeight = 500 + "px";
 
-    $(".item").css("height", resultHeight)
+    // $(".item").css("height", resultHeight)
 
    
 });
